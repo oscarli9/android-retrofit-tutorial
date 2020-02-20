@@ -6,3 +6,8 @@ matrix:
       jdk: openjdk11
       dist: bionic
       
+ before_install:
+ - git clone https://github.com/oscarli9/android-retrofit-tutorial.git
+ - cd android-retrofit-tutorial
+ - mvn install
+ - cd ..
