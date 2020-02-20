@@ -1,0 +1,8 @@
+language: java
+
+matrix: 
+    include:
+    - name: java11
+      jdk: openjdk11
+      dist: bionic
+      
