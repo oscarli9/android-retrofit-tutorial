@@ -1,13 +1,8 @@
-language: java
-
-matrix: 
-    include:
-    - name: java11
-      jdk: openjdk11
-      dist: bionic
-      
- before_install:
- - git clone https://github.com/oscarli9/android-retrofit-tutorial.git
- - cd android-retrofit-tutorial
- - mvn install
- - cd ..
+language: android 
+   android: 
+ components: 
+ - platform-tools 
+ - tools 
+   - build-tools-27.0.1 
+ - android-27
+     script: ./gradlew build check
